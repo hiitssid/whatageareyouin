@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,15 +15,33 @@ body {
   background-color: var(--bg);
   font-family: "Outfit", sans-serif;
 }
+header {
+  text-align: center;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
 main {
-  width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .card-container {
+  margin-top: 2rem;
+  margin-bottom: 0;
   display: flex;
+  max-height: 500px;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -40,6 +58,16 @@ main {
   justify-content: space-between;
   padding: 25px;
   /* align-items: center; */
+}
+.card-trooper,
+.card-abby,
+.card-torpey,
+.card-khoya {
+  border: solid;
+}
+.card:hover {
+  background-color: hsl(216, 50%, 20%);
+  box-shadow: 0 0 25px black;
 }
 img {
   width: 250px;

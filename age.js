@@ -12,6 +12,18 @@ function abby() {
   presentMonth = today.getMonth() + 1;
   presentDay = today.getDay();
 
+  //-------------BBirthday----------------
+  console.log(presentMonth);
+  let card = document.querySelector(".card-abby");
+  if (presentMonth === birth.abby[1] && presentDay === birth.abby[2]) {
+    document.createElement("ram");
+    card.style.borderWidth = "2px";
+    card.style.borderColor = "var(--cyne)";
+  } else {
+    card.style.borderWidth = "0";
+  }
+  //-------------BBirthday----------------
+
   if (presentDay < birth.abby[2]) {
     abbyDays = presentDay - birth.abby[2] + 30;
     presentMonth = presentMonth - 1;
@@ -41,6 +53,17 @@ function trooper() {
   presentYear = today.getFullYear();
   presentMonth = today.getMonth() + 1;
   presentDay = today.getDay();
+
+  //-------------BBirthday----------------
+  console.log(presentMonth);
+  let card = document.querySelector(".card-trooper");
+  if (presentMonth === birth.trooper[1] && presentDay === birth.trooper[2]) {
+    card.style.borderWidth = "2px";
+    card.style.borderColor = "var(--cyne)";
+  } else {
+    card.style.borderWidth = "0";
+  }
+  //-------------BBirthday----------------
 
   if (presentDay < birth.trooper[2]) {
     trooperDays = presentDay - birth.trooper[2] + 30;
@@ -72,6 +95,17 @@ function torpey() {
   presentMonth = today.getMonth() + 1;
   presentDay = today.getDay();
 
+  //-------------BBirthday----------------
+  console.log(presentMonth);
+  let card = document.querySelector(".card-torpey");
+  if (presentMonth === birth.torpey[1] && presentMonth === birth.torpey[2]) {
+    card.style.borderWidth = "2px";
+    card.style.borderColor = "var(--cyne)";
+  } else {
+    card.style.borderWidth = "0";
+  }
+  //-------------BBirthday----------------
+
   if (presentDay < birth.torpey[2]) {
     torpeyDays = presentDay - birth.torpey[2] + 30;
     presentMonth = presentMonth - 1;
@@ -101,6 +135,17 @@ function khoya() {
   presentYear = today.getFullYear();
   presentMonth = today.getMonth() + 1;
   presentDay = today.getDay();
+
+  //-------------BBirthday----------------
+  console.log(presentMonth);
+  let card = document.querySelector(".card-khoya");
+  if (presentMonth === birth.khoya[1] && presentDay === birth.khoya[2]) {
+    card.style.borderWidth = "2px";
+    card.style.borderColor = "var(--cyne)";
+  } else {
+    card.style.borderWidth = "0";
+  }
+  //-------------BBirthday----------------
 
   if (presentDay < birth.khoya[2]) {
     khoyaDays = presentDay - birth.khoya[2] + 30;
